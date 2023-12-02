@@ -1,0 +1,12 @@
+{
+    "cmake.debugConfig": {
+        "name" : "Regular debugging",
+        "cwd": "${workspaceFolder}/inputs"
+    },
+    "files.associations": {
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "xstring": "cpp",
+        "utility": "cpp"
+    }
+}
