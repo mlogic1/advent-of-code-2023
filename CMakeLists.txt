@@ -11,6 +11,3 @@ SET (SRC_FILES
 )
 
 add_executable(advent2023 ${SRC_FILES})
-
-# target_link_libraries(smart-mirror PRIVATE libcurl_static ${SDL2_LIBRARIES} SDL2_ttf)
-# target_include_directories(smart-mirror PRIVATE ./lib/json)
