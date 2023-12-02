@@ -5,6 +5,4 @@
 namespace Day01
 {
 	void RunDay();
-
-	void PartA(/* args */);
 }

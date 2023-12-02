@@ -10,9 +10,11 @@
 ********************************************************************************/
 
 #include "days.h"
+#include <iostream>
 
 int main(int argc, const char* argv[])
 {
+	Day01::RunDay();
 	
 	return 0;
 }
