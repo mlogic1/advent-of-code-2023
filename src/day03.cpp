@@ -4,15 +4,43 @@
 **                         mlogic1 (https://github.com/mlogic1)                 *     /..'\
 **                                                                              *     /'.'\
 **                                                                              *    /.''.'\
-**                                                                              *    /.'.'.\
+**                         Day 03 - Gear Ratios                                 *    /.'.'.\
 **                                                                              *   /'.''.'.\
 **                                                                              *   ^^^[_]^^^
 ********************************************************************************/
 
-#pragma once
+#include "days.h"
+#include "advent-common.h"
+#include <iostream>
+#include <string>
 
-#define RUN_DAY(day) Day##day::RunDay();
+namespace Day03
+{
+	void PartA(const StringVector& inputLines)
+	{
+		int rows = inputLines[0].size();
+		int cols = inputLines.size();
+		char** grid = common::CreateGrid<char>(rows, cols);
 
-namespace Day01{	void RunDay();	}
-namespace Day02{	void RunDay();	}
-namespace Day03{	void RunDay();	}
+		std::cout << rows << "\t" << cols << std::endl;
+
+		common::DeleteGrid(grid, rows, cols);
+	}
+
+	void PartB(const StringVector& inputLines)
+	{
+		
+	}
+
+
+	void RunDay()
+	{
+		StringVector inputLines;
+		if (!common::ReadEntireFileStrings("sample.txt", inputLines))
+		{
+			throw std::runtime_error("[Day 03] Unable to open input file.");
+		}
+		PartA(inputLines);
+		PartB(inputLines);
+	}
+}
