@@ -13,7 +13,6 @@
 
 #define RUN_DAY(day) Day##day::RunDay();
 
-namespace Day01
-{
-	void RunDay();
-}
+namespace Day01{	void RunDay();	}
+namespace Day02{	void RunDay();	}
+// namespace Day03{	void RunDay();	}
