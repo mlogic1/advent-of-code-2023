@@ -13,9 +13,6 @@
 #include "advent-common.h"
 #include <iostream>
 #include <string>
-/*#include <vector>
-#include <map>
-#include <algorithm>*/
 
 namespace Day02
 {
@@ -23,22 +20,22 @@ namespace Day02
 	{
 		uint32_t totalSum = 0;
 
-		static constexpr const int MAX_RED 		= 12;
+		static constexpr const int MAX_RED	= 12;
 		static constexpr const int MAX_GREEN 	= 13;
 		static constexpr const int MAX_BLUE 	= 14;
 
 		for (int i = 0; i < inputLines.size(); ++i)
-		{			
+		{
 			int gameId = i + 1;
 			bool possible = true;
 			const std::string& line = inputLines[i];
-			
+
 			const StringVector idSplit = common::SplitStringWithDelimiter(line, ':');
 			const StringVector games = common::SplitStringWithDelimiter(idSplit[1], ';');
-			
+
 			for (const std::string& game : games)
 			{
-				
+
 				const StringVector hands = common::SplitStringWithDelimiter(game, ',');
 				for (const std::string& hand : hands)
 				{
@@ -63,7 +60,7 @@ namespace Day02
 				totalSum += gameId;
 			}
 		}
-		
+
 		std::cout << "[Day 02] Part A. Total sum is: " << totalSum << std::endl;
 	}
 
@@ -73,7 +70,7 @@ namespace Day02
 		for (int i = 0; i < inputLines.size(); ++i)
 		{
 			const std::string& line = inputLines[i];
-			
+
 			const StringVector idSplit = common::SplitStringWithDelimiter(line, ':');
 			const StringVector games = common::SplitStringWithDelimiter(idSplit[1], ';');
 
