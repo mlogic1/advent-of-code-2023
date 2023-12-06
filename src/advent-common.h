@@ -121,6 +121,26 @@ namespace common
 
 		delete[] grid;
 	}
+
+	template<typename T>
+	static std::vector<T> GetNumbersInString(const std::string& str)
+	{
+		std::stringstream ss(str);
+		std::vector<T> result;
+
+		while( !isdigit(ss.peek()) )
+			ss.ignore();
+
+		T num;
+		while(ss >> num)
+		{
+			result.push_back(num);
+			if ( ss.good() && !isdigit(ss.peek()) )
+				ss.ignore();
+		}
+
+		return result;
+	}
 }
 
 #endif

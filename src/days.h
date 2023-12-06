@@ -17,3 +17,4 @@ namespace Day01{	void RunDay();	}
 namespace Day02{	void RunDay();	}
 namespace Day03{	void RunDay();	}
 namespace Day04{	void RunDay();	}
+namespace Day05{	void RunDay();	}
