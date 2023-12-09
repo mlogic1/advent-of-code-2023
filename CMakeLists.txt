@@ -15,6 +15,7 @@ SET (SRC_FILES
         ${SRC_DIR}/day06.cpp
         ${SRC_DIR}/day07.cpp
         ${SRC_DIR}/day08.cpp
+        ${SRC_DIR}/day09.cpp
 )
 
 add_executable(advent2023 ${SRC_FILES})
