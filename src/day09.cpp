@@ -4,7 +4,7 @@
 **                         mlogic1 (https://github.com/mlogic1)                 *     /..'\
 **                                                                              *     /'.'\
 **                                                                              *    /.''.'\
-**                         Day 08 - Haunted Wasteland                           *    /.'.'.\
+**                         Day 09 - Mirage Maintenance                          *    /.'.'.\
 **                                                                              *   /'.''.'.\
 **                                                                              *   ^^^[_]^^^
 ********************************************************************************/
@@ -16,9 +16,6 @@
 #include <string>
 #include <sstream>
 #include <map>
-
-
-#include <fstream>
 
 namespace Day09
 {
