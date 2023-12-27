@@ -18,6 +18,7 @@
 #include <map>
 #include <climits>
 #include <thread>
+#include <limits.h>
 #include <atomic>
 
 namespace Day05
@@ -91,7 +92,7 @@ namespace Day05
 		std::cout << "[Day 05] Part A: " << lowestLoc << std::endl;
 	}
 
-	std::atomic_uint64_t lowestLocPartB = INT_MAX;
+	std::atomic_uint64_t lowestLocPartB{INT_MAX};// = std::atomic_uint64_t{INT_MAX);
 
 	// threaded operation
 	void RunSeedRange(uint64_t seed, int64_t len)
